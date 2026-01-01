@@ -7,7 +7,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyromod.exceptions import ListenerTimeout
 
-from PURVIBOTS import app
+from DEVILBOTS import app
 from config import OWNER_ID as SUDOERS
 
 # Import your MongoDB database structure
@@ -16,9 +16,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 HEROKU_API_URL = "https://api.heroku.com"
 HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")  # Pre-defined variable
-REPO_URL = "https://github.com/TEAMPURVI/PURVI_MUSIC"  # Pre-defined variable
+REPO_URL = "https://github.com/ultron-probot/starmusic"  # Pre-defined variable
 BUILDPACK_URL = "https://github.com/heroku/heroku-buildpack-python"
-UPSTREAM_REPO = "https://github.com/TEAMPURVI/Heroku_Bot"  # Pre-defined variable
+UPSTREAM_REPO = "https://github.com/ultron-probot/heroku2"  # Pre-defined variable
 UPSTREAM_BRANCH = "master"  # Pre-defined variable
 API_ID = os.getenv("API_ID")
 API_HASH = os.getenv("API_HASH")
@@ -39,7 +39,7 @@ async def post(url: str, *args, **kwargs):
         return data
 
 
-async def PURVIBOTSbin(text):
+async def DEVILBOTSbin(text):
     resp = await post(f"{BASE}api/v2/paste", data=text)
     if not resp["success"]:
         return
@@ -80,7 +80,7 @@ async def is_heroku():
 
 
 async def paste_neko(code: str):
-    return await PURVIBOTSbin(code)
+    return await DEVILBOTSbin(code)
 
 
 def fetch_app_json(repo_url):
