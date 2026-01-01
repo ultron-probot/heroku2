@@ -4,8 +4,8 @@ import importlib
 
 from pyrogram import idle
 
-from PURVIBOTS import app
-from PURVIBOTS.plugins import ALL_MODULES
+from DEVILBOTS import app
+from DEVILBOTS.plugins import ALL_MODULES
 
 logging.basicConfig(
     level=logging.INFO,
@@ -16,13 +16,13 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("pymongo").setLevel(logging.ERROR)
 
-log = logging.getLogger("PURVIBOTS-HEROKU-BOT")
+log = logging.getLogger("DEVILBOTS-HEROKU-BOT")
 
 async def main():
     log.info("Starting bot...")
     await app.start()
     for all_module in ALL_MODULES:
-        imported_module = importlib.import_module("PURVIBOTS.plugins" + all_module)
+        imported_module = importlib.import_module("DEVILBOTS.plugins" + all_module)
     log.info("Bot Started")
     await idle()
     await app.stop()
