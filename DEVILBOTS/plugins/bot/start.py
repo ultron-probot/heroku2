@@ -6,7 +6,7 @@ import random
 
 from config import START_IMAGES, OWNER
 
-from PURVIBOTS import app
+from DEVILBOTS import app
 
 
 
@@ -19,13 +19,13 @@ async def start(client: Client, message):
         [InlineKeyboardButton("ᴀʙᴏᴜᴛ ʙᴏᴛ", callback_data="about")],
         [
             InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER),
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/purvi_support")
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/A2globalupdate")
         ]
     ])
 
     await message.reply_photo(
         photo=random_image,
-        caption=f"**๏ ʜᴇʟʟᴏ {user_mention} !!**\n\n**๏ ɪ ᴀᴍ ᴀ ʜᴇʀᴋᴏᴜ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ. ɪ ᴄᴀɴ ᴇᴀsɪʟʏ ᴄᴏɴᴛʀᴏʟ ʜᴇʀᴋᴏᴜ ᴀᴄᴄᴏᴜɴᴛ & ᴀᴘᴘs 🤖**\n\n**๏ ᴄʜᴇᴀᴋ ᴀʙᴏᴜᴛ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟs.**",
+        caption=f"**๏ ʜᴇʟʟᴏ {user_mention} !!**\n\n**๏ ɪ ᴀᴍ ᴀ ʜᴇʀᴋᴏᴜ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʙᴏᴛ. ɪ ᴄᴀɴ ᴇᴀsɪʟʏ ᴄᴏɴᴛʀᴏʟ ʜᴇʀᴋᴏᴜ ᴀᴄᴄᴏᴜɴᴛ & ᴀᴘᴘs 🤖**\n\n**๏ ᴄʜᴇᴄᴋ ᴀʙᴏᴜᴛ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟs.**",
         reply_markup=buttons
     )
 
@@ -33,14 +33,14 @@ async def start(client: Client, message):
 async def about_callback(client: Client, query: CallbackQuery):
     buttons = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/purvi_support"),
-            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/PURVI_UPDATES")
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/Ankitgupta21444"),
+            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/A2globalupdate")
         ],
         [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="back_to_start")]
     ])
 
     await query.message.edit_text(
-        "**๏ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ғᴏʀ ᴄᴏɴᴛʀᴏʟ ʜᴇʀᴋᴏᴜ ᴀᴘᴘs. ᴡʀɪᴛᴛᴇɴ ɪɴ [ᴘʏᴛʜᴏɴ](https://www.python.org/) ʜᴇʟᴘ ᴡɪᴛʜ [ᴘʏʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram).**\n\n**<u>๏ sᴏᴍᴇ ᴄᴏᴍᴍᴀɴᴅ :-</u>**\n\n**/start :- sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.**\n**/help :- ᴄʜᴇᴀᴋ ʙᴏᴛs ʜᴇʟᴘ.**\n\n**<u>๏ ᴏᴡɴᴇʀ ᴄᴏᴍᴍᴀɴᴅ :-</u>**\n\n**/myhost :- ᴄᴏɴᴛʀᴏʟ ᴀᴘᴘs.**\n**/host :- ʜᴏsᴛ ɴᴇᴡ ᴀᴘᴘ.**\n\n**๏ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ғᴏʀ ɴᴇᴡ ᴜᴘᴅᴀᴛᴇs.**",
+        "**๏ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ғᴏʀ ᴄᴏɴᴛʀᴏʟ ʜᴇʀᴋᴏᴜ ᴀᴘᴘs. ᴡʀɪᴛᴛᴇɴ ɪɴ [ᴘʏᴛʜᴏɴ](https://www.python.org/) ʜᴇʟᴘ ᴡɪᴛʜ [ᴘʏʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram).**\n\n**<u>๏ sᴏᴍᴇ ᴄᴏᴍᴍᴀɴᴅ :-</u>**\n\n**/start :- sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.**\n**/help :- ᴄʜᴇᴄᴋ ʙᴏᴛs ʜᴇʟᴘ.**\n\n**<u>๏ ᴏᴡɴᴇʀ ᴄᴏᴍᴍᴀɴᴅ :-</u>**\n\n**/myhost :- ᴄᴏɴᴛʀᴏʟ ᴀᴘᴘs.**\n**/host :- ʜᴏsᴛ ɴᴇᴡ ᴀᴘᴘ.**\n\n**๏ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ғᴏʀ ɴᴇᴡ ᴜᴘᴅᴀᴛᴇs.**",
         reply_markup=buttons
     )
 
