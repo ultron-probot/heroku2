@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 import random
 import config 
 from config import START_IMAGES
-from PURVIBOTS import app
+from DEVILBOTS import app
 
 
 
@@ -12,7 +12,7 @@ async def help_command(client: Client, message):
     random_image = random.choice(START_IMAGES)  
 
     buttons = InlineKeyboardMarkup([
-        [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/purvi_support"),
+        [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/A2globalupdate"),
         InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close_help")]
     ])
 
@@ -21,7 +21,7 @@ async def help_command(client: Client, message):
         caption=(
             "**<u>๏ ʙᴀsɪᴄ ᴄᴏᴍᴍᴀɴᴅ :-</u>**\n\n"
             "**/start :- sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.**\n"
-            "**/help :- ᴄʜᴇᴀᴋ ʙᴏᴛs ʜᴇʟᴘ.**\n\n"
+            "**/help :- ᴄʜᴇᴄᴋ ʙᴏᴛs ʜᴇʟᴘ.**\n\n"
             "**<u>๏ ᴏᴡɴᴇʀ ᴄᴏᴍᴍᴀɴᴅ :-</u>**\n\n"
             "**/myhost :- ᴄᴏɴᴛʀᴏʟ ᴀᴘᴘs.**\n"
             "**/host :- ʜᴏsᴛ ɴᴇᴡ ᴀᴘᴘ.**\n\n"
