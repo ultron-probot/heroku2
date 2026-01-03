@@ -52,7 +52,7 @@ async def back_to_start(client: Client, query: CallbackQuery):
         [InlineKeyboardButton("ᴀʙᴏᴜᴛ ʙᴏᴛ", callback_data="about")],
         [
             InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER),
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/purvi_support")
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/A2globalupdate")
         ]
     ])
 
