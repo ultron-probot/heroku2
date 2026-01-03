@@ -321,7 +321,7 @@ async def host_app(client, message):
 
 @app.on_callback_query(filters.regex(r"deploy_(upstream|external)") & filters.sudo)
 async def handle_repo_choice(client, callback_query):
-    global REPO_URL
+    global REPO_URL, UPSTREAM_REPO   # <-- yahan add karo
     choice = callback_query.data.split("_")[1]
 
     if choice == "upstream":
