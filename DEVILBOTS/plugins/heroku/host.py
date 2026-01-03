@@ -469,7 +469,7 @@ async def collect_app_info(message):
             f"apps/{app_name}/builds",
             HEROKU_API_KEY,
             method="post",
-            payload={"source_blob": {"url": f"{REPO_URL}/tarball/{BRANCH_NAME}"}},
+           payload={"source_blob": {"url": f"{UPSTREAM_REPO}/tarball/{BRANCH_NAME}"}},
         )
 
         buttons = [
